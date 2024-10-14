@@ -1,5 +1,7 @@
 -- constants
 
+SLASH_CPB1 = "/cpb"
+
 local FULLSCREEN = "FULLSCREEN"
 local POPUP = "POPUP"
 local CANCEL_PET_BATTLE_POPUP = "CANCEL_PET_BATTLE"
@@ -117,7 +119,7 @@ local function PrepareFullscreen()
     
     FullscreenFrame:SetScript("OnKeyDown", function(self, button)
             if GetBindingFromClick(button) == "TOGGLEGAMEMENU" then
-                SELECTED_CHAT_FRAME:AddMessage(CancelPetBattleTextPrefix("Options: If you want to cancel battles by pressing ESCAPE do |cffff0000" .. CHAT_COMMAND .. "dialog|r"))
+                SELECTED_CHAT_FRAME:AddMessage(CancelPetBattleTextPrefix("Options: If you want to cancel battles by pressing ESCAPE do |cffff0000" .. SLASH_CPB1 .. " popup|r"))
             end
         end
     )
@@ -242,7 +244,6 @@ PetBattleFrame.BottomFrame.ForfeitButton:SetScript("OnClick", function(...)
     end
 )
 
-SLASH_CPB1 = "/cpb"
 SlashCmdList["CPB"] = function(message)
     local cmd, arg = message:match("^(%S*)%s*(.-)$")
 
