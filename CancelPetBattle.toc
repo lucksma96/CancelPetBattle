@@ -7,6 +7,6 @@
 ## Author: astrapi_drakos
 ## Version: 0.0.1
 
-## SavedVariables: CPB_CHAT, CPB_POPUP, CPB_MARK
+## SavedVariables: CPB_QUALITY, CPB_CHAT, CPB_MODE, CPB_MARK, CPB_TARGET_MARKER
 
-cancel-pet-battle.lua
+CancelPetBattle.lua
