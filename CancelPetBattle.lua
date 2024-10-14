@@ -85,9 +85,13 @@ end
 
 local function RegisterPetGUID()
     PetUnitGUID = UnitGUID("target")
-    UnitGUIDs[PetUnitGUID] = PetUnitGUID
-    if UnitGUIDs[PetUnitGUID] then
-        print(CancelPetBattleTextPrefix("This pet battle was previously forfeited!"))
+
+    if PetUnitGUID then
+        if UnitGUIDs[PetUnitGUID] then
+            print(CancelPetBattleTextPrefix("This pet battle was previously forfeited!"))
+        else
+            UnitGUIDs[PetUnitGUID] = PetUnitGUID
+        end
     end
 end
 
