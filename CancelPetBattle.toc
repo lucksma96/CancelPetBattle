@@ -1,12 +1,15 @@
-## Interface: 110000
+## Interface: 110002
 
 ## Title: CancelPetBattle
 
-## Notes: Prompts the player to cancel the pet battle if there are no rare pets found.
+## Notes: Prompts the player to cancel the pet battle if there are no wild pets of the desired quality.
 
 ## Author: astrapi_drakos
 ## Version: 1.0.0
 
 ## SavedVariables: CPB_QUALITY, CPB_CHAT, CPB_MODE, CPB_MARK, CPB_TARGET_MARKER
+
+## X-Credits: Znuff (cancel-pet-fight)
+## X-License: GNU General Public License v3.0
 
 CancelPetBattle.lua
